@@ -1,0 +1,38 @@
+{
+  "name": "filter-iterable-perf",
+  "version": "0.1.0",
+  "description": "benchmarks for filter-iterable & filter-arraylike-iterable packages",
+  "main": "index.js",
+  "scripts": {
+    "perf": "node perf/",
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgbuils/perf-filter-iterable.git"
+  },
+  "keywords": [
+    "benchmark",
+    "perf",
+    "filter-iterable"
+  ],
+  "author": "Xavier Garcia Buils <xgbuils@gmail.com> (https://github.com/xgbuils)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgbuils/perf-filter-iterable/issues"
+  },
+  "benchmarkDependencies": [
+    "filter-iterable@0.1.0"
+  ],
+  "homepage": "https://github.com/xgbuils/perf-filter-iterable#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "npm-install-version": "^6.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.0"
+  },
+  "pre-commit": {
+    "run": "test"
+  }
+}
