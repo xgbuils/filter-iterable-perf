@@ -2,7 +2,10 @@ const suiteCollection = require('../../suiteCollectionFactory')
 const suite = require('../../suiteFactory')
 
 const filterIterable = require('../tests/filter-iterable')
-const filterArrayLikeIterable = require('../tests/filter-arraylike-iterable')
+const filterArrayLikeIterable_0_1_0 = require('../tests/filter-arraylike-iterable_0.1.0')
+const filterArrayLikeIterable_0_1_1 = require('../tests/filter-arraylike-iterable_0.1.1')
+const filterArrayLikeIterable_0_1_2 = require('../tests/filter-arraylike-iterable_0.1.2')
+const filterArrayLikeIterable_0_1_3 = require('../tests/filter-arraylike-iterable_0.1.3')
 const imlazy = require('../tests/imlazy')
 const ramda = require('../tests/ramda')
 const immutable = require('../tests/immutable')
@@ -19,8 +22,11 @@ const manyFilters = require('../setup/manyFilters')
 const array = require('../setup/array')
 
 const tests = [
+    filterArrayLikeIterable_0_1_0,
+    filterArrayLikeIterable_0_1_1,
+    filterArrayLikeIterable_0_1_2,
+    filterArrayLikeIterable_0_1_3,
     filterIterable,
-    filterArrayLikeIterable,
     imlazy,
     ramda,
     immutable,

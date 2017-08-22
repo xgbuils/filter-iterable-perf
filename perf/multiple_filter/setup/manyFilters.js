@@ -1,3 +1,3 @@
 module.exports = function () {
-    this.numberOfMaps = 34
+    this.numberOfMaps = 64
 }

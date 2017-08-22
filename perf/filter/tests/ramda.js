@@ -1,5 +1,5 @@
 const pkgVersion = 'ramda@0.24.1'
-const {filter} = require('../packages')[pkgVersion]
+const {filter} = require('../../packages')[pkgVersion]
 const traverse = require('../../traverse_iterable')
 
 module.exports = {
