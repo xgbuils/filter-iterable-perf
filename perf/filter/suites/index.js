@@ -1,5 +1,15 @@
 const suiteCollection = require('../../suiteCollectionFactory')
-const arraySuite = require('./array')
+const requireDir = require('require-dir')
+
+const buildIterableSuites = require('./buildIterableSuites')
+const buildArray = require('../../setup/buildArray')
+const arrayTests = requireDir('../tests/array/')
+
+const arraySuite = buildIterableSuites(
+    'array',
+    buildArray,
+    arrayTests
+)
 
 module.exports = suiteCollection({
     name: 'filter',

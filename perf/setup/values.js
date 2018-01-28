@@ -1,0 +1,8 @@
+module.exports = {
+    FEW_FILTERS: 3,
+    ENOUGH_FILTERS: 12,
+    TOO_MUCH_FILTERS: 48,
+    SMALL_SIZE: 32,
+    MEDIUM_SIZE: 1024,
+    BIG_SIZE: 32768
+}
