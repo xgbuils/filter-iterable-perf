@@ -19,7 +19,7 @@ module.exports = function (name, buildIterable, tests) {
         build: buildIterable,
         suites: [
             suiteCollection({
-                name: 'iterable size',
+                name: 'iterable size (with ${numberOfFilters} filters)',
                 setups: {
                     numberOfFilters: ENOUGH_FILTERS
                 },
@@ -48,7 +48,7 @@ module.exports = function (name, buildIterable, tests) {
                 ]
             }),
             suiteCollection({
-                name: 'number of filters',
+                name: 'number of filters (with ${length} items)',
                 setups: {
                     length: MEDIUM_SIZE
                 },
@@ -75,6 +75,15 @@ module.exports = function (name, buildIterable, tests) {
                         tests
                     })
                 ]
+            }),
+            suite({
+                testType: 'onlyBuild',
+                name: 'build without processing (${length} items & ${numberOfFilters} maps)',
+                setups: {
+                    length: BIG_SIZE,
+                    numberOfFilters: TOO_MUCH_FILTERS
+                },
+                tests
             })
         ]
     })
